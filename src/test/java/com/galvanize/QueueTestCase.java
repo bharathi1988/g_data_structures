@@ -14,23 +14,23 @@ public class QueueTestCase {
         queue = new Queue();
     }
 
-//    @Test
-//    void testIsEmpty() {
-//        assertTrue(queue.isEmpty());
-//        queue.enqueue(new Node(100));
-//        assertFalse(queue.isEmpty());
-//    }
-//
-//    @Test
-//    void testLength() {
-//        assertEquals(0, queue.length());
-//        queue.enqueue(new Node(100));
-//        assertEquals(1, queue.length());
-//        queue.enqueue(new Node(200));
-//        queue.enqueue(new Node(300));
-//        assertEquals(3, queue.length());
-//    }
-//
+    @Test
+    void testIsEmpty() {
+        assertTrue(queue.isEmpty());
+        queue.enqueue(new Node(100));
+        assertFalse(queue.isEmpty());
+    }
+
+    @Test
+    void testLength() {
+        assertEquals(0, queue.length());
+        queue.enqueue(new Node(100));
+        assertEquals(1, queue.length());
+        queue.enqueue(new Node(200));
+        queue.enqueue(new Node(300));
+        assertEquals(3, queue.length());
+    }
+
 //    @Test
 //    void testEnqueueManyNodes_FIFO() {
 //        Node firstNode = new Node("A");
@@ -40,7 +40,7 @@ public class QueueTestCase {
 //        assertEquals(firstNode, queue.getFront());
 //        assertEquals("C", queue.getRear().getValue());
 //    }
-//
+
 //    @Test
 //    void testDequeueOneNode_FIFO() {
 //        Node firstIn = new Node("A");

@@ -10,4 +10,11 @@ package com.galvanize;
  */
 public class Node {
 
+    public Node(int i) {
+
+    }
+
+    public Node(String s){
+
+    }
 }
