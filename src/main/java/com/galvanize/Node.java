@@ -10,11 +10,21 @@ package com.galvanize;
  */
 public class Node {
 
-    public Node(int i) {
+    private String value;
 
+    public Node(int i) {
+        this.value = String.valueOf(i);
     }
 
     public Node(String s){
+        this.value =  s;
 
+    }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "value='" + value + '\'' +
+                '}';
     }
 }
